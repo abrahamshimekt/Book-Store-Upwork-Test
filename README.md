@@ -67,10 +67,10 @@ Server will run on `http://localhost:5000`.
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | **POST** | `/api/books/add-book` | Add a new book |
-| **GET** | `/api/get-all-books?pageNumber=10&pageSize=1` | Get all books with pagination |
+| **GET** | `/api/books/get-all-books?pageNumber=10&pageSize=1` | Get all books with pagination |
 | **GET** | `/api/books/get-book-by-ISBN?ISBN=` | Get book details by ISBN |
-| **PUT** | `/api/books/:id` | Update book details |
-| **DELETE** | `/api/books/:ISBN` | Remove a book |
+| **PUT** | `/api/books/update-book/:id` | Update book details |
+| **DELETE** | `/api/books/delete-book/:ISBN` | Remove a book |
 
 ### 🔒 Authentication (JWT Required for Modification Routes)
 | Method | Endpoint | Description |
