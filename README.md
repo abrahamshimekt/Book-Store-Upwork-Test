@@ -36,8 +36,8 @@ This is a RESTful API built with **Node.js** and **Express.js** for managing a b
 ## 📌 Installation & Setup
 ### 1️⃣ Clone the repository
 ```sh
-git clone https://github.com/yourusername/bookstore-api.git
-cd book-store-upwork-test
+git clone https://github.com/abrahamshimekt/Book-Store-Upwork-Test.git
+cd Book-Store-Upwork-Test
 cd backend
 ```
 
