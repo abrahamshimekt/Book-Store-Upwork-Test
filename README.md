@@ -20,7 +20,7 @@ This is a RESTful API built with **Node.js** and **Express.js** for managing a b
 
 ## 📂 Project Structure
 ```
-📦 bookstore-api
+📦 book-store-upwork-test/backend
 ├── 📂 controllers         # API controllers (business logic)
 ├── 📂 models              # Mongoose schemas/models
 ├── 📂 routes              # API routes
