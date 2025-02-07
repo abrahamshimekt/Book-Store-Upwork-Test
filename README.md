@@ -1,4 +1,3 @@
-# Book-Store-Upwork-Test
 # 📚 Bookstore Management API
 
 ## 🚀 Overview
@@ -38,7 +37,8 @@ This is a RESTful API built with **Node.js** and **Express.js** for managing a b
 ### 1️⃣ Clone the repository
 ```sh
 git clone https://github.com/yourusername/bookstore-api.git
-cd bookstore-api
+cd book-store-upwork-test
+cd backend
 ```
 
 ### 2️⃣ Install dependencies
@@ -50,15 +50,14 @@ npm install
 Create a `.env` file in the root directory with the following:
 ```
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/bookstore
-JWT_SECRET=your_jwt_secret
-REDIS_HOST=localhost
-REDIS_PORT=6379
+MONGODB_CONNECTION_STRING=
+REDIS_URL=
+JWT_SECRET_KEY=
 ```
 
 ### 4️⃣ Start the server
 ```sh
-npm start
+node index.js
 ```
 Server will run on `http://localhost:5000`.
 
@@ -67,17 +66,20 @@ Server will run on `http://localhost:5000`.
 ### 📖 Books API
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| **POST** | `/api/books/add` | Add a new book |
-| **GET** | `/api/books?limit=10&page=1` | Get all books with pagination |
-| **GET** | `/api/books/:ISBN` | Get book details by ISBN |
-| **PUT** | `/api/books/:ISBN` | Update book details |
+| **POST** | `/api/books/add-book` | Add a new book |
+| **GET** | `/api/get-all-books?pageNumber=10&pageSize=1` | Get all books with pagination |
+| **GET** | `/api/books/get-book-by-ISBN?ISBN=` | Get book details by ISBN |
+| **PUT** | `/api/books/:id` | Update book details |
 | **DELETE** | `/api/books/:ISBN` | Remove a book |
 
 ### 🔒 Authentication (JWT Required for Modification Routes)
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| **POST** | `/api/auth/register` | Register a new user |
-| **POST** | `/api/auth/login` | Authenticate user and get a token |
+| **POST** | `/api/users/sign-up` | Register a new user |
+| **POST** | `/api/users/sign-in` | Authenticate user and get a token |
+
+### Postman API documentation with examples
+https://app.getpostman.com/join-team?invite_code=ebc784e57d8c38ac3f2c9eff31d3e54c287742e6328ff1d2c250e933d4b79049&target_code=3be0d25b83a45ec49058421f6a275792
 
 ## 🛠️ Testing
 Run unit and integration tests using Jest & Supertest:
@@ -106,14 +108,4 @@ npm test
 This project is licensed under the MIT License.
 
 ---
-💡 **Built with ❤️ by [Your Name](https://github.com/yourusername)**
-
-
-## How It works
-```
-cd backend
-npm i
-node index.js
-```
-### Postman API documentation with examples
-https://app.getpostman.com/join-team?invite_code=ebc784e57d8c38ac3f2c9eff31d3e54c287742e6328ff1d2c250e933d4b79049&target_code=3be0d25b83a45ec49058421f6a275792
+💡 **Built with ❤️ by [Abraham Shimekt](https://github.com/abrahamshimekt)**
